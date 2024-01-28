@@ -24,6 +24,7 @@ node {
             }
         }
     } finally {
+        archiveArtifacts 'dist/add2vals'
         sleep(time: 1, unit: 'MINUTES')
     }
 }
