@@ -22,9 +22,6 @@ node {
             steps {
                 sshagent(['f954f3a3-6c6d-40c3-b5b6-8631010980ca']){
                 sh '''
-                ssh -o StrictHostKeyChecking=no ubuntu@172.22.254.35 git pull'
-                '''
-                sh '''
                 ssh -o StrictHostKeyChecking=no ubuntu@172.22.254.35 ./home/ubuntu/dicoding/deploy/simple-python-pyinstaller-app/deploy.sh'
                 '''
                 }
